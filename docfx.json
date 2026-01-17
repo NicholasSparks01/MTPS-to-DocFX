@@ -1,0 +1,28 @@
+{
+  "metadata": [],
+  "build": {
+    "content": [
+      {
+        "files": ["index.md", "/articles/**.md"],
+        "src": "docfx_content"
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"],
+        "src": "docfx_content"
+      }
+    ],
+    "dest": "_site",
+    "postProcessors": ["ExtractSearchIndex"],
+    "globalMetadata": {
+      "_enableSearch": true,
+      "_noindex": false
+    },
+    "overwrite": [],
+    "template": [
+      "modern"
+    ],
+    "toc": ["docfx_content/toc.yml"]
+  }
+}
